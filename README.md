@@ -4,9 +4,11 @@ Welcome to the M1D Curved Screen Starter Scene for Decentraland! This project is
 
 This scene is perfect for anyone looking to build immersive media experiences, virtual cinemas, or creative hubs.
 
-## Integration with the M1D Creators Hub
+## Using M1D Components in the Decentraland Creators Hub
 
-This starter scene serves as the foundational template for the "Curved Screen" asset within the M1D Creators Hub. By providing this as a base, we allow users in the Hub to quickly integrate and customize a sophisticated video screen for their own projects. You can use this repository to understand the underlying code, and use the Creators Hub to deploy and manage it in your own scenes seamlessly.
+The Decentraland Creators Hub is a powerful tool for building scenes, but it does not currently support the direct installation of third-party libraries like `@m1d/dcl-components`.
+
+This starter scene provides a solution. It comes pre-packaged with the M1D components already installed and configured. By importing this entire scene project into the Decentraland Creators Hub, you can effectively bypass the installation restriction and start using the M1D Curved Screen and other components in your Hub projects right away. Think of this as a template that brings M1D's functionality into the Hub's ecosystem.
 
 ## Getting Started
 
@@ -17,10 +19,8 @@ Follow these steps to get the scene running on your local machine for testing an
 First, you'll need the URL of the repository to clone it.
 
 1.  Navigate to the main page of the GitHub repository: [https://github.com/MetaOne-Designs/m1d_components_creatorsHub](https://github.com/MetaOne-Designs/m1d_components_creatorsHub)
-2.  Click the green **`< > Code`** button.
+2.  Click the green `< > Code` button.
 3.  In the dropdown that appears, make sure **HTTPS** is selected, and click the **copy icon** next to the URL to copy it to your clipboard.
-
-
 
 ### Step 2: Clone the Repository in GitHub Desktop
 
@@ -56,13 +56,13 @@ This will launch the Decentraland development server, and you can see the scene 
 
 This scene is built around two key functions from the `@m1d/dcl-components` library.
 
-### `createVideoGuide`
+### createVideoGuide
 
 This function sets up the video source. It creates a video texture that can be applied to any material in your scene. You can easily modify it to use a video from a URL or a local file included in your project.
 
-### `createCurvedScreen`
+### createCurvedScreen
 
-This is the main event! This function generates a curved 3D model and applies the video texture to it. The most important parameter to play with is **`curveFactor`**. By adjusting this single value in the `src/index.ts` file, you can instantly change the curvature of the screen from completely flat to a deep curve.
+This is the main event! This function generates a curved 3D model and applies the video texture to it. The most important parameter to play with is `curveFactor`. By adjusting this single value in the `src/index.ts` file, you can instantly change the curvature of the screen from completely flat to a deep curve.
 
 ### Ground Plane
 
@@ -72,8 +72,8 @@ The scene also includes an optional ground model. This is purely for visual cont
 
 We encourage you to open the `src/index.ts` file and experiment!
 
-* **Change the `curveFactor`**: See how it affects the look of the screen.
-* **Adjust the `position`, `rotation`, and `scale`**: Move the screen around and resize it to fit your needs.
-* **Use your own video**: Modify the `createVideoGuide` function to link to your own video files.
+* Change the `curveFactor`: See how it affects the look of the screen.
+* Adjust the `position`, `rotation`, and `scale`: Move the screen around and resize it to fit your needs.
+* Use your own video: Modify the `createVideoGuide` function to link to your own video files.
 
 This starter scene is your launchpad. Have fun creating!
